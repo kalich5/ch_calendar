@@ -1,0 +1,62 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "CH Schul- und Arbeitskalender",
+        "description": "Waehlen Sie Ihren Kanton. Er bestimmt die gesetzlichen Feiertage und Schulferienzeiten.",
+        "data": {
+          "canton": "Kanton"
+        },
+        "data_description": {
+          "canton": "Alle 26 Schweizer Kantone werden unterstuetzt."
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Dieser Kanton ist bereits konfiguriert."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "CH Kalender - Einstellungen",
+        "data": {
+          "birthdays": "Geburtstage",
+          "family_holidays": "Familienfeiertage",
+          "reminder_days": "Erinnerung X Tage im Voraus",
+          "reminder_daily": "Taeglich im Erinnerungsfenster erinnern"
+        },
+        "data_description": {
+          "birthdays": "Format: TT.MM | Name  oder  JJJJ-MM-TT | Name. Mehrere Eintraege mit | oder Zeilenumbruch trennen.",
+          "family_holidays": "Format: TT.MM | Name  oder  JJJJ-MM-TT | Name. Mehrere Eintraege mit | oder Zeilenumbruch trennen.",
+          "reminder_days": "Wie viele Tage vor dem Ereignis der Erinnerungssensor aktiv wird.",
+          "reminder_daily": "Wenn aktiviert: taeglich. Wenn deaktiviert: nur einmal."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "workday": {"name": "Arbeitstag"},
+      "school_day": {"name": "Schultag"},
+      "holiday": {"name": "Gesetzlicher Feiertag"},
+      "vacation": {"name": "Schulferien"},
+      "holiday_name": {"name": "Name des Feiertags"},
+      "vacation_name": {"name": "Name der Schulferien"},
+      "next_holiday": {"name": "Naechster Feiertag"},
+      "days_to_holiday": {"name": "Tage bis naechsten Feiertag"},
+      "next_vacation": {"name": "Naechste Schulferien"},
+      "days_to_vacation": {"name": "Tage bis naechste Schulferien"},
+      "next_birthday": {"name": "Naechster Geburtstag"},
+      "days_to_birthday": {"name": "Tage bis naechsten Geburtstag"},
+      "next_family_holiday": {"name": "Naechster Familienfeiertag"},
+      "days_to_family_holiday": {"name": "Tage bis naechsten Familienfeiertag"}
+    },
+    "calendar": {
+      "swiss_public_holidays": {"name": "Schweizer Feiertage"},
+      "swiss_school_vacations": {"name": "Schweizer Schulferien"},
+      "swiss_holidays_vacations": {"name": "Feiertage und Schulferien"},
+      "swiss_custom_events": {"name": "Eigene Ereignisse"}
+    }
+  }
+}

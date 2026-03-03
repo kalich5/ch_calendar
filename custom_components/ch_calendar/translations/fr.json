@@ -1,0 +1,62 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Calendrier scolaire et professionnel CH",
+        "description": "Selectionnez votre canton. Cela determine les jours feries et les vacances scolaires applicables.",
+        "data": {
+          "canton": "Canton"
+        },
+        "data_description": {
+          "canton": "Les 26 cantons suisses sont pris en charge."
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Ce canton est deja configure."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Calendrier CH - Options",
+        "data": {
+          "birthdays": "Anniversaires",
+          "family_holidays": "Fetes familiales",
+          "reminder_days": "Rappel X jours a l'avance",
+          "reminder_daily": "Rappel quotidien dans la fenetre de rappel"
+        },
+        "data_description": {
+          "birthdays": "Format: JJ.MM | Nom  ou  AAAA-MM-JJ | Nom. Separez plusieurs entrees par | ou un saut de ligne.",
+          "family_holidays": "Format: JJ.MM | Nom  ou  AAAA-MM-JJ | Nom. Separez plusieurs entrees par | ou un saut de ligne.",
+          "reminder_days": "Combien de jours avant l'evenement le capteur de rappel s'active.",
+          "reminder_daily": "Si active, rappel chaque jour dans la fenetre. Si desactive, une seule fois."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "workday": {"name": "Jour ouvre"},
+      "school_day": {"name": "Jour d'ecole"},
+      "holiday": {"name": "Jour ferie"},
+      "vacation": {"name": "Vacances scolaires"},
+      "holiday_name": {"name": "Nom du jour ferie"},
+      "vacation_name": {"name": "Nom des vacances"},
+      "next_holiday": {"name": "Prochain jour ferie"},
+      "days_to_holiday": {"name": "Jours jusqu'au prochain ferie"},
+      "next_vacation": {"name": "Prochaines vacances scolaires"},
+      "days_to_vacation": {"name": "Jours jusqu'aux prochaines vacances"},
+      "next_birthday": {"name": "Prochain anniversaire"},
+      "days_to_birthday": {"name": "Jours jusqu'au prochain anniversaire"},
+      "next_family_holiday": {"name": "Prochaine fete familiale"},
+      "days_to_family_holiday": {"name": "Jours jusqu'a la prochaine fete familiale"}
+    },
+    "calendar": {
+      "swiss_public_holidays": {"name": "Jours feries suisses"},
+      "swiss_school_vacations": {"name": "Vacances scolaires suisses"},
+      "swiss_holidays_vacations": {"name": "Jours feries et vacances"},
+      "swiss_custom_events": {"name": "Evenements personnels"}
+    }
+  }
+}
