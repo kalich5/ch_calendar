@@ -1,1 +1,62 @@
-{"config":{"step":{"user":{"title":"CH skolsky a pracovny kalendar","description":"Vyberte svoj kanton pre spravne statne sviatky a skolske prazdniny.","data":{"canton":"Kanton"},"data_description":{"canton":"Vsetkych 26 svajciarskych kantonov je podporovanych."}}},"abort":{"already_configured":"Tento kanton je uz nakonfigurovany."}},"options":{"step":{"init":{"title":"CH Kalendar - Nastavenia","data":{"birthdays":"Narodeniny","family_holidays":"Rodinne sviatky","reminder_days":"Pripomenut X dni vopred","reminder_daily":"Denne pripomienky v okne upozorneni"},"data_description":{"birthdays":"Format: DD.MM | Nazov  alebo  RRRR-MM-DD | Nazov. Viac poloziek oddelite | alebo novym riadkom.","family_holidays":"Format: DD.MM | Nazov  alebo  RRRR-MM-DD | Nazov. Viac poloziek oddelite | alebo novym riadkom.","reminder_days":"Kolko dni pred udalostou sa aktivuje senzor pripomienky.","reminder_daily":"Zapnute: kazdy den v okne. Vypnute: len raz."}}}},"entity":{"sensor":{"workday":{"name":"Pracovny den"},"school_day":{"name":"Skolsky den"},"holiday":{"name":"Statny sviatok"},"vacation":{"name":"Skolske prazdniny"},"holiday_name":{"name":"Nazov sviatku"},"vacation_name":{"name":"Nazov prazdnin"},"next_holiday":{"name":"Dalsi statny sviatok"},"days_to_holiday":{"name":"Dni do dalsieho sviatku"},"next_vacation":{"name":"Dalsie skolske prazdniny"},"days_to_vacation":{"name":"Dni do dalsich prazdnin"},"next_birthday":{"name":"Dalsie narodeniny"},"days_to_birthday":{"name":"Dni do dalsich narodenin"},"next_family_holiday":{"name":"Dalsi rodinny sviatok"},"days_to_family_holiday":{"name":"Dni do dalsieho rodinneho sviatku"}},"calendar":{"swiss_public_holidays":{"name":"Svajciarske statne sviatky"},"swiss_school_vacations":{"name":"Svajciarske skolske prazdniny"},"swiss_holidays_vacations":{"name":"Sviatky a prazdniny"},"swiss_custom_events":{"name":"Vlastne udalosti"}}}}
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "CH školský a pracovný kalendár",
+        "description": "Vyberte svoj kantón. Ten určuje platné štátne sviatky a školské prázdniny.",
+        "data": {
+          "canton": "Kantón"
+        },
+        "data_description": {
+          "canton": "Všetkých 26 švajčiarskych kantónov je podporovaných."
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Tento kantón je už nakonfigurovaný."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "CH Kalendár – Nastavenia",
+        "data": {
+          "birthdays": "Narodeniny",
+          "family_holidays": "Rodinné sviatky",
+          "reminder_days": "Pripomenúť X dní vopred",
+          "reminder_daily": "Denné pripomienky v okne upozornení"
+        },
+        "data_description": {
+          "birthdays": "Formát: DD.MM | Názov  alebo  RRRR-MM-DD | Názov. Viac položiek oddeľte znakom | alebo novým riadkom.",
+          "family_holidays": "Formát: DD.MM | Názov  alebo  RRRR-MM-DD | Názov. Viac položiek oddeľte znakom | alebo novým riadkom.",
+          "reminder_days": "Koľko dní pred udalosťou sa aktivuje senzor pripomienky.",
+          "reminder_daily": "Zapnuté: každý deň v okne. Vypnuté: len raz."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "workday": {"name": "Pracovný deň"},
+      "school_day": {"name": "Školský deň"},
+      "holiday": {"name": "Štátny sviatok"},
+      "vacation": {"name": "Školské prázdniny"},
+      "holiday_name": {"name": "Názov sviatku"},
+      "vacation_name": {"name": "Názov prázdnin"},
+      "next_holiday": {"name": "Ďalší štátny sviatok"},
+      "days_to_holiday": {"name": "Dní do ďalšieho sviatku"},
+      "next_vacation": {"name": "Ďalšie školské prázdniny"},
+      "days_to_vacation": {"name": "Dní do ďalších prázdnin"},
+      "next_birthday": {"name": "Ďalšie narodeniny"},
+      "days_to_birthday": {"name": "Dní do ďalších narodenín"},
+      "next_family_holiday": {"name": "Ďalší rodinný sviatok"},
+      "days_to_family_holiday": {"name": "Dní do ďalšieho rodinného sviatku"}
+    },
+    "calendar": {
+      "swiss_public_holidays": {"name": "Švajčiarske štátne sviatky"},
+      "swiss_school_vacations": {"name": "Švajčiarske školské prázdniny"},
+      "swiss_holidays_vacations": {"name": "Sviatky a prázdniny"},
+      "swiss_custom_events": {"name": "Vlastné udalosti"}
+    }
+  }
+}
