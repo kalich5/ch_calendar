@@ -1,8 +1,4 @@
 {
-  "name": "CH Calendar",
-  "domain": "ch_calendar",
-  "country": ["CH"],
-  "homeassistant": "2023.0.0",
-  "render_readme": true,
-  "iot_class": "Local Polling"
+  "name": "CH School & Work Calendar",
+  "render_readme": true
 }
