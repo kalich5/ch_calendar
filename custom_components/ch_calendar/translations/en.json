@@ -1,1 +1,62 @@
-{"config":{"step":{"user":{"title":"CH School and Work Calendar","data":{"canton":"Canton"}}}},"options":{"step":{"init":{"title":"CH Calendar Options","data":{"birthdays":"Birthdays","family_holidays":"Family Holidays","reminder_days":"Remind X days before","reminder_daily":"Remind daily in window"}}}}}
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "CH School & Work Calendar",
+        "description": "Select your canton. This determines which public holidays and school vacation dates apply.",
+        "data": {
+          "canton": "Canton"
+        },
+        "data_description": {
+          "canton": "All 26 Swiss cantons are supported."
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "This canton is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "CH Calendar - Options",
+        "data": {
+          "birthdays": "Birthdays",
+          "family_holidays": "Family Holidays",
+          "reminder_days": "Remind X days in advance",
+          "reminder_daily": "Remind every day within the reminder window"
+        },
+        "data_description": {
+          "birthdays": "Format: DD.MM | Name  or  YYYY-MM-DD | Name. Separate multiple entries with | or new lines.",
+          "family_holidays": "Format: DD.MM | Name  or  YYYY-MM-DD | Name. Separate multiple entries with | or new lines.",
+          "reminder_days": "How many days before the event the reminder sensor activates.",
+          "reminder_daily": "If enabled, reminder fires every day in the window. If disabled, only once."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "workday": {"name": "Workday"},
+      "school_day": {"name": "School Day"},
+      "holiday": {"name": "Public Holiday"},
+      "vacation": {"name": "School Vacation"},
+      "holiday_name": {"name": "Holiday Name"},
+      "vacation_name": {"name": "Vacation Name"},
+      "next_holiday": {"name": "Next Public Holiday"},
+      "days_to_holiday": {"name": "Days to Next Holiday"},
+      "next_vacation": {"name": "Next School Vacation"},
+      "days_to_vacation": {"name": "Days to Next Vacation"},
+      "next_birthday": {"name": "Next Birthday"},
+      "days_to_birthday": {"name": "Days to Next Birthday"},
+      "next_family_holiday": {"name": "Next Family Holiday"},
+      "days_to_family_holiday": {"name": "Days to Next Family Holiday"}
+    },
+    "calendar": {
+      "swiss_public_holidays": {"name": "Swiss Public Holidays"},
+      "swiss_school_vacations": {"name": "Swiss School Vacations"},
+      "swiss_holidays_vacations": {"name": "Swiss Holidays and Vacations"},
+      "swiss_custom_events": {"name": "Custom Events"}
+    }
+  }
+}
